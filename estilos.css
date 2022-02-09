@@ -1,0 +1,414 @@
+/*
+-- standards and Reset
+*/
+* {margin: 0; padding: 0;}
+ul {list-style-type: none;}
+img, fieldset {border: 0;}
+h1, h2, h3, h4, h5, h6 { font-family: 'Dosis', sans-serif;}
+}
+
+/*
+-- typography and colors
+*/
+
+body {
+    color: #333;
+    background: url(image/backpaper.jpg);
+}
+
+body, input, select, textarea {
+
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+}
+
+a:link {
+    color: #0F599F;
+}
+
+a:visited {
+    color: #666;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 1px dotted #F00;
+}
+
+a:active {
+    color: #F00;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    font-family: Times, Times New Roman, serif;
+}
+
+#main-content h1 {
+    font-size: 36px;
+    margin-bottom: 0.5em;
+}
+
+#main-content h2,
+#second-content h1 {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+}
+
+#second-content p {
+    font-size: 14px;
+}
+
+#main-content ul,
+#main-content ol {
+    font-size: 16px;
+    margin-left: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#main-content ul {
+    list-style-type: square;
+}
+
+#main-content li {
+    margin-bottom: 0.3em;
+}
+
+
+/*
+-- structure
+*/
+#header {
+    position: relative;
+}    
+
+#logo {
+    padding: 10px 0;
+    display: block;
+    float: left;
+}
+
+#logo img {
+    display: block;
+    width: 100px;
+}
+
+
+#main-menu {
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+#main-menu li {
+    display: inline;
+}
+
+#main-menu a {
+    display: block;
+    float: left;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333333;
+    margin-left: 32px;
+}
+
+#main-menu a:hover, #main-menu a.ativo {
+    color:#ffe066;
+}
+
+#main-menu a.ativo {
+    font-weight: bold;
+}
+
+#header, #content, #footer {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main-pic {
+    height: 75px;
+    background: grey url(image/veludo.png);
+}
+
+#content {
+    margin: 30px auto;
+}
+
+#main-content {
+    float: left;
+    width: 620px;
+}
+
+#second-content {
+    float: right;
+    width: 330px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+#second-content img {
+    display: block;
+    width: 75%;
+}
+
+
+#footer-out {
+    background: #ffe066;
+}    
+
+
+#footer {
+    color: #FFF;
+}
+
+
+
+#phone-email {
+    float: left;
+    font-size: 16px;
+}
+
+#phone-email span.ddd {
+    font-size: 0.8em;
+}
+
+#address {
+    float: right;
+    text-align: right;
+    font-size: 14px;
+  
+
+}    
+
+#copyright {
+    font-size: 11px;
+    color: #d9d9d9;
+    clear: both;
+    display: block;
+    padding: 1em 0;
+}
+
+/*
+-- Specific Styles
+*/
+
+#bd-home #second-content {
+    background: #eeaeca;
+    color: #FFF;
+    border-radius: 2%;
+
+}
+
+#bd-home #second-content a {
+    color: #FFF;
+}
+
+
+#bd-personal #main-pic,
+#bd-classes #main-pic,
+#bd-contact #main-pic {
+    height: 110px;
+}
+
+/* classes */
+
+#bd-personal .legend {
+    margin: 0;
+    color: #FFF;
+    background: #808080;
+    font-style: italic;
+    text-align: center;
+    padding: 0.3em 0.6em;
+}
+
+.brief {
+    margin-bottom: 1em;
+}
+
+.brief blockquote {
+    font-size: 16px;
+    font-family: Georgia, serif;
+    font-style: italic;
+    line-height: 1.5em;
+    color: white;
+    text-align: justify;
+    margin-bottom: 0.3em;
+}
+
+.brief blockquote p {
+    margin-bottom: 0.7em;
+}
+
+.brief .autor {
+    text-align: right;
+    font-size: 12px;
+}
+
+/*
+-- Forms
+*/
+
+.camp {
+    margin-bottom: 0.75em;
+}
+
+.camp label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 0.1em;
+}
+
+.camp abbr {
+    color: #C00;
+    font-weight: bold;
+}
+
+.camp input, .camp textarea, .camp select {
+    width: 100%;
+    border: 1px solid #CCC;
+    font-size: 1em;
+    padding: 0.1em 0;
+}
+
+.camp textarea {
+    height: 10em;
+}
+
+label.checkbox {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+label.checkbox input {
+    display: inline;
+    vertical-align: baseline;
+    width: auto;
+}
+
+.submit {
+    font-size: 1em;
+    background: #0F599F;
+    font-weight: bold;
+    color: #FFF;
+    border: 0;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+}
+
+.submit:hover {
+    background: #F90;
+}
+
+fieldset.grupo .camp {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo.phone {
+    width: 30%;
+}
+
+.campo.name, .camp.company {
+    width: 48%;
+}
+
+fieldset.group .camp.company {
+    margin-right: 0;
+    float: right;
+}
+
+
+/*
+-- Tables
+*/
+.service-table {
+    border-spacing: 0;
+    width: 100%;
+
+}
+
+.service-table caption {
+    font-size: 24px;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.service-table th {
+    background: #ADD8E6;
+    color: #FFF;
+    font-weight: normal;
+    text-align: center;
+}
+
+.service-table th, .service-table td {
+    border-bottom: 1px solid #CCC;
+    font-size: 14px;
+    padding: 0.3em;
+}
+
+.service-table .delivery-due {
+    text-align: center;
+}
+
+.service-table .service-cost {
+    text-align: right;
+}    
+
+/*
+-- Class 
+*/
+
+.grupo::before, .grupo::after  {
+    content: " ";
+    display: table;
+}
+
+.grupo::after {
+    clear: both; 
+}
+
+
+
+
+
+/*
+
+*/
+.row {
+  margin: 8px -16px;
+}
+
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 5px;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
